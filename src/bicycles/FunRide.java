@@ -29,22 +29,18 @@ public class FunRide {
     }
 
     public int getEnteredCount(){
-        System.out.println(myList.size());
         return myList.size();
     }
 
 
 
     public int getCountForType(BicycleType bicycleType){
-       System.out.println(this.myList);
         for(Bicycle bicycle:myList){
-         System.out.println(bicycle.getBicycleType());
             if (bicycle.getBicycleType() == bicycleType ) {
                 BicycleTypeCount++;
             }
 
         }
-
         return  BicycleTypeCount;
     }
 
