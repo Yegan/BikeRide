@@ -1,7 +1,6 @@
 package bicycles;
 
 
-// Abstract classes are similar to to an interface
 public abstract class BicycleBase implements Bicycle  {
     private int speed;
 

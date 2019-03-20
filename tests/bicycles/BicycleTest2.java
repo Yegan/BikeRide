@@ -1,5 +1,6 @@
 package bicycles;
 
+import bicycles.BikeRides.BikeRideTwo;
 import bicycles.models.MountainBike;
 import bicycles.models.RoadBike;
 import bicycles.models.Tandems;
@@ -10,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BicycleTest2 {
 
 
-//    // MountainBike BikeRideTwo test
     @Test
     public void mountainBikeRideTwoTest(){
 
@@ -22,7 +22,6 @@ public class BicycleTest2 {
     }
 
 
-//    // MountainBike BikeRideTwo Test Mountain Road Test
     @Test
     public void roadBikeBikeRideTwoTest(){
         RoadBike roadBike = new RoadBike();
@@ -32,7 +31,6 @@ public class BicycleTest2 {
         assertEquals(234, BikeRideTwo.getCurrentSpeed());
     }
 
-//    //Tandems BikeRideTwo test
       @Test
     public void tandemsBikeRideTwoTest(){
         Tandems tandems = new Tandems();

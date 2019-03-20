@@ -1,9 +1,11 @@
 package bicycles;
 
+import bicycles.BikeRides.BikeRideOne;
 import bicycles.models.MountainBike;
 import bicycles.models.RoadBike;
 import bicycles.models.Tandems;
 import org.junit.jupiter.api.Test;
+//each test for each bike
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,9 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BicycleTest {
 
 
-    // BikeRideOne testing BikeRide interface
-
-    //MountainBike BikeRideOne test
     @Test
     public void mountainBikeBikeRideOneTest(){
      MountainBike mountainBike = new MountainBike();
@@ -25,7 +24,6 @@ public class BicycleTest {
     }
 
 
-    // RoadBike BikeRideOne test
     @Test
     public void roadBikeBikeRideOneTest(){
         RoadBike roadBike = new RoadBike();
@@ -37,7 +35,6 @@ public class BicycleTest {
     }
 
 
-    // Tandems BikeRideOne test
     @Test
     public void tandemBikeRideOneTest(){
         Tandems tandems = new Tandems();

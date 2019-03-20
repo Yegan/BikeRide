@@ -1,8 +1,11 @@
-package bicycles;
+package bicycles.BicycleSpecification;
+
+import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class BicycleFromSpec extends BicycleBase {
 
-    private final BicycleSpecification BicycleSpecification;
+    private final bicycles.BicycleSpecification.BicycleSpecification BicycleSpecification;
 
     public BicycleFromSpec(BicycleSpecification BicycleSpecification){
         this.BicycleSpecification = BicycleSpecification;
