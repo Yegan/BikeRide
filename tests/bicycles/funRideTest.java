@@ -33,6 +33,5 @@ public class funRideTest {
         funRide.accept(roadBike);
 
         assertEquals(4, funRide.getCountForType(BicycleType.RoadBike));
-//        assertEquals(1,funRide.getCountForType(BicycleType.Tandem));
     }
 }
