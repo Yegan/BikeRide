@@ -1,4 +1,4 @@
-package bicycles.BikeRides;
+package bicycles.bike_rides;
 
 import bicycles.Bicycle;
 import bicycles.BikeRide;
@@ -43,6 +43,5 @@ public class BikeRideTwo implements BikeRide {
     public int getCurrentSpeed(){
         return this.bicycle.currentSpeed();
     }
-
 
 }

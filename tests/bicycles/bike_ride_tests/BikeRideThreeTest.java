@@ -1,6 +1,6 @@
-package bicycles.BikeRideTests;
+package bicycles.bike_ride_tests;
 
-import bicycles.BikeRides.BikeRideThree;
+import bicycles.bike_rides.BikeRideThree;
 import bicycles.models.MountainBike;
 import bicycles.models.RoadBike;
 import bicycles.models.Tandems;
@@ -13,26 +13,26 @@ public class BikeRideThreeTest {
     @Test
     public void mountainBikeRideThreeTest(){
         MountainBike mountainBike = new MountainBike();
-        BikeRideThree BikeRideThree = new BikeRideThree(mountainBike);
-        BikeRideThree.ride();
-        assertEquals(45, BikeRideThree.getCurrentSpeed());
+        BikeRideThree bikeRideThree = new BikeRideThree(mountainBike);
+        bikeRideThree.ride();
+        assertEquals(45, bikeRideThree.getCurrentSpeed());
     }
 
     @Test
     public void roadBikeBikeRideThreeTest(){
         RoadBike roadBike = new RoadBike();
-        BikeRideThree BikeRideThree = new BikeRideThree(roadBike);
-        BikeRideThree.ride();
-        assertEquals(99, BikeRideThree.getCurrentSpeed());
+        BikeRideThree bikeRideThree = new BikeRideThree(roadBike);
+        bikeRideThree.ride();
+        assertEquals(99, bikeRideThree.getCurrentSpeed());
     }
 
 
     @Test
     public void tandemsBikeRideThreeTest(){
         Tandems tandems = new Tandems();
-        BikeRideThree BikeRideThree = new BikeRideThree(tandems);
-        BikeRideThree.ride();
-        assertEquals(108, BikeRideThree.getCurrentSpeed());
+        BikeRideThree bikeRideThree = new BikeRideThree(tandems);
+        bikeRideThree.ride();
+        assertEquals(108, bikeRideThree.getCurrentSpeed());
     }
 
 }

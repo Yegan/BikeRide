@@ -5,12 +5,9 @@ import java.util.List;
 
 public class FunRide {
 
-
-
-    private int BicycleTypeCount;
+    private int bicycleTypeCount;
     private int maxNumberOfBikes;
     private List<Bicycle> myList = new ArrayList<Bicycle>();
-
 
     public FunRide(int numberOfBikes){
     this.maxNumberOfBikes = numberOfBikes;
@@ -21,8 +18,6 @@ public class FunRide {
         if (this.maxNumberOfBikes > myList.size()) {
         myList.add(bicycle);
         }
-
-
         else{
             System.out.println( "The fun race is full");
         }
@@ -37,11 +32,11 @@ public class FunRide {
     public int getCountForType(BicycleType bicycleType){
         for(Bicycle bicycle:myList){
             if (bicycle.getBicycleType() == bicycleType ) {
-                BicycleTypeCount++;
+                bicycleTypeCount++;
             }
 
         }
-        return  BicycleTypeCount;
+        return  bicycleTypeCount;
     }
 
 }

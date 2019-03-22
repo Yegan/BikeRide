@@ -1,4 +1,4 @@
-package bicycles.BicycleSpecification;
+package bicycles.bicycle_specification;
 
 import bicycles.BicycleType;
 
@@ -21,7 +21,6 @@ public class BicycleSpecification {
     public int getBrakeSpeed(){
         return brakeSpeed;
     }
-
 
     public BicycleType getBicycleType(){
         return this.bicycleType;
