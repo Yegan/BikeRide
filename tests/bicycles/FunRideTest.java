@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FunRideTest {
 
     @Test
-    public void funRideTestEnteredCount(){
+    public void funRideTestEnteredCountAccepted(){
         FunRide funRide = new FunRide(5);
         Bicycle roadBike = new RoadBike();
         Bicycle mountainBike = new MountainBike();
@@ -23,6 +23,24 @@ public class FunRideTest {
     }
 
     @Test
+    public void funRideTestEnteredCountRejected(){
+        FunRide funRide = new FunRide(4);
+        Bicycle roadBike = new RoadBike();
+        Bicycle mountainBike = new MountainBike();
+        Bicycle tandems = new Tandems();
+        funRide.accept(mountainBike);
+        funRide.accept(mountainBike);
+        funRide.accept(mountainBike);
+        funRide.accept(roadBike);
+        funRide.accept(roadBike);
+        funRide.accept(tandems);
+        funRide.accept(tandems);
+        funRide.accept(tandems);
+        funRide.accept(mountainBike);
+        assertEquals(4,funRide.getEnteredCount());
+    }
+
+    @Test
     public void funRideTestGetCountTypeForRoadBike(){
         FunRide funRide = new FunRide(5);
         Bicycle roadBike = new RoadBike();
@@ -32,7 +50,6 @@ public class FunRideTest {
         funRide.accept(roadBike);
         funRide.accept(roadBike);
         funRide.accept(roadBike);
-
         assertEquals(4,funRide.getCountForType(BicycleType.RoadBike));
     }
 

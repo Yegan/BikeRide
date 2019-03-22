@@ -1,6 +1,5 @@
-package bicycles.bike_ride_tests;
+package bicycles.bike_rides;
 
-import bicycles.bike_rides.BikeRideThree;
 import bicycles.models.MountainBike;
 import bicycles.models.RoadBike;
 import bicycles.models.Tandems;
