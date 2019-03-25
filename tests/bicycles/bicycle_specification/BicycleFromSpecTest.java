@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BicycleFromSpecTest {
 
     @Test
-    public void BikeSpecTestMountainBike(){
+    public void BikeFromSpecTestMountainBike(){
         BicycleSpecification mountainBikeSpec = new BicycleSpecification(5,-3, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
         assertEquals(5,mountainBikeSpec.getAccelerationSpeed());
@@ -18,7 +18,7 @@ public class BicycleFromSpecTest {
 
 
     @Test
-    public void BikeSpecTestRoadBike(){
+    public void BikeFromSpecTestRoadBike(){
       BicycleSpecification roadBikeSpec = new BicycleSpecification(11,-4,BicycleType.RoadBike);
       Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
       assertEquals(11,roadBikeSpec.getAccelerationSpeed());
@@ -27,7 +27,7 @@ public class BicycleFromSpecTest {
 
 
     @Test
-    public void BikeSpecTestTandemBike(){
+    public void BikeFromSpecTestTandemBike(){
      BicycleSpecification tandemsBikeSpec = new BicycleSpecification(12,-7, BicycleType.Tandem);
      Bicycle bicycle  = new BicycleFromSpec(tandemsBikeSpec);
      assertEquals(12, tandemsBikeSpec.getAccelerationSpeed());
